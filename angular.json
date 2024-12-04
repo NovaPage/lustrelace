@@ -32,6 +32,7 @@
               }
             ],
             "styles": [
+              "src/styles/tailwind.scss",
               "src/styles.scss"
             ],
             "scripts": [],
@@ -103,5 +104,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "f9abe60e-8c07-4a66-b4a9-cf2272fea4b3"
   }
 }
