@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { TestComponent } from './test/test.component';
+import { ImageCompressionComponent } from './image-compression/image-compression.component'; // Importa el componente de compresión de imágenes
 
 @Component({
+  standalone: true,
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss'],
+  imports: [TestComponent, ImageCompressionComponent] // Importa ambos componentes aquí
 })
 export class AppComponent {
-  title = 'LustreLace';
+  title = 'lustrelace';
 }
