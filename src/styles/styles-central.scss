@@ -3,3 +3,14 @@
 
 // Importa los estilos de Tailwind
 @use "./tailwind" as tailwind;
+
+// Importar una tipografía TTF
+@font-face {
+  font-family: "Sydney";
+  src: url("../assets/fonts/SydneySansSerifRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Parfumerie";
+  src: url("../assets/fonts/ParfumerieScriptRegular.ttf") format("truetype");
+}
