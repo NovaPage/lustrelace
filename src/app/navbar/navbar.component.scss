@@ -1,0 +1,64 @@
+:host {
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
+}
+
+/* Primera parte de la navbar */
+.part1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: aqua;
+    transition: opacity 0.3s ease, visibility 0.3s ease, height 0.3s ease;
+}
+
+/* Segunda parte de la navbar */
+.part2 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #da2828;
+    position: sticky;
+    top: 0;
+    z-index: 1001; /* Asegúrate de que esté encima de la part1 */
+}
+
+.part2 .logo {
+    margin-right: auto; /* Logo se posiciona a la izquierda */
+}
+
+.part2 .menu {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.part2 .menu li {
+    margin: 0 15px;
+}
+
+.derecha {
+    margin-left: auto;
+}
+
+/* Clase para ocultar part1 */
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    padding: 0;  /* Asegura que no quede espacio extra */
+}
+
+.hidden-logo {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+}
